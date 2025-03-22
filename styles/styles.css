@@ -170,6 +170,13 @@ button {
     "wdth" 100;
 }
 
+button:hover {
+  background: linear-gradient(to right, var(--clr-neutral-blue-800) .02%, var(--clr-primary-red) 99.98%);
+  box-shadow: 0 5px 15px rgba(255, 98, 87, 0.5);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
 /*footer*/
 
 footer {
