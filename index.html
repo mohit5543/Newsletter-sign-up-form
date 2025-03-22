@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+  <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+  <main>
+    <!-- Sign-up form start -->
+    <section class="newsletter">
+      <article class="newsletter-text">
+        <h1>Stay updated!</h1>
+        <p>Join 60,000+ product managers receiving monthly updates on:</p>
+        <ul>
+          <li>Product discovery and building what matters</li>
+          <li>Measuring to ensure updates are a success</li>
+          <li>And much more!</li>
+        </ul>
+        <form action="#" method="post">
+          <div class="form-group">
+            <label for="email">Email address</label>
+            <input type="email" id="email" name="email" placeholder="email@company.com" required>
+          </div>
+          <button type="submit">Subscribe to monthly newsletter</button>
+        </form>
+      </article>
+      <aside class="newsletter-image">
+        <img src="./assets/images/illustration-sign-up-desktop.svg" alt="Sign up illustration">
+      </aside>
+    </section>
+
+    <!-- Success message section -->
+    <section class="success hidden" aria-hidden="true">
+      <img src="./assets/images/icon-success.svg" alt="Check icon">
+      <h2>Thanks for subscribing!</h2>
+      <p>A confirmation email has been sent to <span class="email"></span>.Please open it and click the button inside to confirm your subscription.</p>
+      <button type="button">Dismiss message</button>
+    </section>
+  </main>
+
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Mohit Bhatia</a>
+  </footer>
+
+  <script src="./script/script.js"></script>
+</body>
+</html>

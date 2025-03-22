@@ -1,0 +1,330 @@
+/*Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+.roboto-400 {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+  }
+
+.roboto-700 {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+  }
+
+  /*colors*/
+
+:root {
+  --clr-primary-red: hsl(4, 100%, 67%);
+  
+  --clr-neutral-blue-800: hsl(234, 29%, 20%);
+  --clr-neutral-blue-700: hsl(235, 18%, 26%);
+  --clr-neutral-grey: hsl(0, 0%, 58%);
+  --clr-neutral-white: hsl(0, 0%, 100%);
+}
+
+/*universal styles*/
+
+body {
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: var(--clr-neutral-blue-700);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.newsletter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  border-radius: 30px;
+  background-color: var(--clr-neutral-white);
+  width: 900px;
+
+}
+
+.newsletter-text {
+  width: 50%;
+  padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.newsletter-text h1 {
+  font-size: 3rem;
+  color: var(--clr-neutral-blue-800);
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.newsletter-text p {
+  font-size: .8rem;
+  color: var(--clr-neutral-blue-700);
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+ul {
+  list-style: none; /* Remove default bullet */
+  padding: 0;
+}
+
+li {
+  display: flex;
+  align-items: center; 
+  gap: 10px;
+  line-height: 2rem; 
+  font-size: .8rem;
+  color: var(--clr-neutral-blue-700);
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+      "wdth" 100;
+}
+
+li::before {
+  content: "";
+  display: inline-block;
+  width: 20px; 
+  height: 20px;
+  background-image: url("../assets/images/icon-list.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  font-size: .8rem;
+  color: var(--clr-neutral-blue-700);
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+#email {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 10px;
+  border: .5px solid var(--clr-neutral-grey);
+  background-color: var(--clr-neutral-white);
+  color: var(--clr-neutral-grey);
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+button {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 10px;
+  border: none;
+  background-color: var(--clr-neutral-blue-800);
+  color: var(--clr-neutral-white);
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+/*footer*/
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: .8rem;
+  color: var(--clr-neutral-white);
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+footer a {
+  color: var(--clr-primary-red);
+}
+
+/*Sign up form section*/
+
+.hidden {
+  display: none;
+}
+
+.success {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  max-width: 90%;
+  width: 400px;
+}
+
+.success h2 {
+  font-size: 2rem;
+  color: var(--clr-neutral-blue-800);
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.email {
+  font-size: 1rem;
+  color: var(--clr-neutral-blue-700);
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.success p {
+  font-size: 1rem;
+  color: var(--clr-neutral-blue-700);
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.error {
+  border-color: red !important;
+  background-color: rgba(255, 0, 0, 0.1);
+}
+
+.error-message {
+  color: red;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+  display: block;
+}
+
+/*Media queries*/
+
+@media screen and (max-width: 768px) {
+  .newsletter {
+    flex-direction: column-reverse;
+    width: 90%;
+  }
+
+  .newsletter-text {
+    width: 100%;
+  }
+
+  .success {
+    width: 90%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem;
+    margin: 0;
+    border-radius: 0;
+    text-align: left;
+  }
+
+  .success img {
+    width: 50px;
+  }
+
+  .success h2,
+  .success p {
+    text-align: left;
+  }
+
+  .success button {
+    margin-top: auto;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .newsletter {
+    flex-direction: column-reverse;
+    width: 90%;
+  }
+
+  .newsletter-text {
+    width: 100%;
+  }
+
+  .success {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem;
+    margin: 0;
+    border-radius: 0;
+    text-align: left;
+  }
+
+  .success img {
+    width: 50px;
+  }
+
+  .success h2,
+  .success p {
+    text-align: left;
+  }
+
+  .success button {
+    margin-top: auto;
+  }
+}
